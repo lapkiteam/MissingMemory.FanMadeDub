@@ -13,6 +13,8 @@ define w = Character("Незнакомка", color="#c8ffc8")
 # Игра начинается здесь:
 label start:
 
+    play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0
+
     scene bg room
 
     show eileen happy
