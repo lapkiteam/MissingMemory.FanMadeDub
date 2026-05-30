@@ -1,0 +1,12 @@
+*.rpa
+*.rpyc
+*.rpyb
+*.rpymc
+/src/game/cache
+/src/game/saves
+/src/log.txt
+/src/errors.txt
+/src/traceback.txt
+/src/memory.txt
+
+/deploy
