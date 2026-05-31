@@ -4,6 +4,7 @@
 *.rpymc
 /src/game/cache
 /src/game/saves
+/src/game/log.txt
 /src/log.txt
 /src/errors.txt
 /src/traceback.txt
