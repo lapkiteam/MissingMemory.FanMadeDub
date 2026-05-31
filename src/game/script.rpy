@@ -1,9 +1,11 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
+image beach = "#FDD8B5"
+
 # Определение персонажей игры.
 define n = Character()
-define p = Character("Павел", color="#c8ffc8")
-define w = Character("Незнакомка", color="#c8ffc8")
+define p = Character("Павел", color="#69A797")
+define w = Character("Незнакомка", color="#D49580")
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
@@ -13,11 +15,9 @@ define w = Character("Незнакомка", color="#c8ffc8")
 # Игра начинается здесь:
 label start:
 
-    play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0
+    play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0 volume 0.25
 
-    scene bg room
-
-    show eileen happy
+    scene beach with dissolve
 
     voice "voices/n-01.mp3"
     n "Как давно я не ощущал этой мягкости. Либо песок, либо я уже в гробу с мягкой подложкой."
@@ -33,6 +33,10 @@ label start:
     n "Хотя… Как давно я не был тут?"
     voice "voices/n-07.mp3"
     n "Надо будет когда-нибудь снова сюда поехать. Сказал человек, который уже несколько лет пишет вторую главу визуальной новеллы, хех."
+
+    show eileen happy
+    with dissolve
+
     voice "voices/w-ты не уснул 4.mp3"
     w "Ты случайно не уснул?"
     voice "voices/n-08.mp3"
@@ -72,4 +76,4 @@ label start:
     voice "voices/n-17.mp3"
     n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и горизонт. Ну и нафиг мне этот горизонт сдался!"
 
-    return
+    "Конец!"
