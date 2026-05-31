@@ -38,7 +38,7 @@ label start:
     with dissolve
 
     voice "voices/w-ты не уснул 4.mp3"
-    w "Ты случайно не уснул?"
+    w "Ты случайно не уснул?" with dissolve
     voice "voices/n-08.mp3"
     n "Прозвучал чей-то голос."
     voice "voices/n-09.mp3"
@@ -51,10 +51,14 @@ label start:
     w "Это хорошо. А то я хотела тебе усики подрисовать."
     voice "voices/w-сейчас зонтик принесу5.mp3"
     w "Сейчас зонтик принесу, чтобы ты от солнечного удара не помер."
+    hide eileen happy
+    with dissolve
     voice "voices/n-11.mp3"
     n "Кто это был?"
     voice "voices/n-12.mp3"
     n "Точнее, кто она и откуда знает? Блин, версия с военкоматом всё больше меня беспокоит."
+    show eileen happy
+    with dissolve
     voice "voices/n-13.mp3"
     n "Незнакомка всё же пришла с зонтиком. Нет, военкомат бы не стал так стараться."
     voice "voices/w-но теперь не должно быть жарко4.mp3"
