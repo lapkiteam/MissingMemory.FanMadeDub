@@ -13,6 +13,7 @@ define Something = Character('Незнакомка', color="#FF00C4")
 define audio.Warmly = "music/Warmly_Memories.mp3"
 
 image playing_video = "images/PlayingVideo.png"
+image our_answer = "images/OurAnswer.png"
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
@@ -149,5 +150,11 @@ label original_scene_on_beach:
     Pavel "Хорошо"
     voice "voices/p-1_146.ogg"
     "Она покинула мой взор, остался только я и горизонт."
+
+    stop music
+    "..."
+
+    scene our_answer with dissolve
+    pause 3
 
     jump our_scene
