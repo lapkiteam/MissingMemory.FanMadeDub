@@ -120,10 +120,14 @@ label our_scene:
     with dissolve
     pause 3
 
-    scene beach with dissolve
+    scene black
+    with dissolve
 
     voice "voices/n-01.mp3"
     n "Как давно я не ощущал этой мягкости. Либо песок, либо я уже в гробу с мягкой подложкой."
+
+    scene beach with dissolve
+
     voice "voices/n-02.mp3"
     n "Что за?"
     voice "voices/n-03.mp3"
