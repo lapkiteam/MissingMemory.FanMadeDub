@@ -52,8 +52,12 @@ label original_scene_on_beach:
     # "Хотя... Как давно я не был тут."
     # voice "voices/p-1_136.ogg"
     # "Надо будет когда-нибудь снова сюда поехать."
+    show black as half_dark:
+        alpha 0.1
     voice "voices/So1_01.ogg"
     Something "Ты случайно не уснул?"
+    show black as half_dark:
+        alpha 0.2
     voice "voices/p-1_137.ogg"
     "Прозвучал чей-то голос..."
     # voice "voices/p-1_138.ogg"
@@ -63,12 +67,18 @@ label original_scene_on_beach:
     # Pavel "Нет, не сплю."
     # voice "voices/So1_02.ogg"
     # Something "Это хорошо, я ведь не хочу, чтобы у тебя был солнечный удар."
+    show black as half_dark:
+        alpha 0.3
     voice "voices/So1_03.ogg"
     Something "Сейчас зонтик принесу."
+    show black as half_dark:
+        alpha 0.4
     voice "voices/p-1_140.ogg"
     "Кто это был?"
     # voice "voices/p-1_141.ogg"
     # "Точнее, кто она и откуда меня знает?"
+    show black as half_dark:
+        alpha 0.5
     voice "voices/p-1_142.ogg"
     "Незнакомка всё же пришла с зонтиком."
     # voice "voices/So1_04.ogg"
@@ -82,12 +92,17 @@ label original_scene_on_beach:
     # voice "voices/So1_05.ogg"
     # Something "Будешь дальше лежать или пойдем к воде?"
     # Pavel "Нет, я ещё полежу."
+    show black as half_dark:
+        alpha 0.6
     voice "voices/So1_06.ogg"
     Something "Я рядом буду если что, хорошо?"
     # Pavel "Хорошо"
+    show black as half_dark:
+        alpha 0.7
     voice "voices/p-1_146.ogg"
     "Она покинула мой взор, остался только я и горизонт."
 
+    hide half_dark
     stop music
     play sound "sfx/record-scratch-wut.mp3"
     "..."
