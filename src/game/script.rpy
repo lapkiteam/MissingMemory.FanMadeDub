@@ -94,6 +94,11 @@ label our_scene:
     "Конец!"
 
 label original_scene_on_beach:
+    scene black
+    show text Text("Одним скучным вечерком…", size = 40) at truecenter
+    with dissolve
+    pause 3
+
     scene playing_video with dissolve
 
     voice "voices/p-1_130.ogg"
