@@ -98,7 +98,7 @@ label original_scene_on_beach:
     jump our_scene
 
 label our_scene:
-    play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0 volume 0.25
+    play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0 volume 0.1
 
     scene black
     show text Text("Many hours later…", size = 40) at truecenter
