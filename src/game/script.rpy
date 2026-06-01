@@ -12,6 +12,8 @@ define Something = Character('Незнакомка', color="#FF00C4")
 
 define audio.Warmly = "music/Warmly_Memories.mp3"
 
+image playing_game = "images/PlayingGame.png"
+
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
 # Например, сцену bg room можно вызвать файлом "bg room.png",
@@ -19,8 +21,8 @@ define audio.Warmly = "music/Warmly_Memories.mp3"
 
 # Игра начинается здесь:
 label start:
-    # jump original_scene_on_beach
-    jump our_scene
+    jump original_scene_on_beach
+    # jump our_scene
 
 label our_scene:
     play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0 volume 0.25
@@ -91,6 +93,8 @@ label our_scene:
     "Конец!"
 
 label original_scene_on_beach:
+    scene playing_game with dissolve
+
     voice "voices/p-1_130.ogg"
     "Как давно я не ощущал этой мягкости..."
 
