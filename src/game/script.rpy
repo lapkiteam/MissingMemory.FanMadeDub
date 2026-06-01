@@ -108,7 +108,7 @@ label original_scene_on_beach:
     "..."
 
     scene our_answer with dissolve
-    pause 3
+    pause 5
 
     jump our_scene
 
