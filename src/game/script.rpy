@@ -12,7 +12,7 @@ define Something = Character('Незнакомка', color="#FF00C4")
 
 define audio.Warmly = "music/Warmly_Memories.mp3"
 
-image playing_game = "images/PlayingGame.png"
+image playing_video = "images/PlayingVideo.png"
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
@@ -93,7 +93,7 @@ label our_scene:
     "Конец!"
 
 label original_scene_on_beach:
-    scene playing_game with dissolve
+    scene playing_video with dissolve
 
     voice "voices/p-1_130.ogg"
     "Как давно я не ощущал этой мягкости..."
