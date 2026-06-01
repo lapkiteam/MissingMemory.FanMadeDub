@@ -7,6 +7,11 @@ define n = Character()
 define p = Character("Павел", color="#69A797")
 define w = Character("Незнакомка", color="#D49580")
 
+define Pavel = Character('Павел', color="#00FF66")
+define Something = Character('Незнакомка', color="#FF00C4")
+
+define audio.Warmly = "music/Warmly_Memories.mp3"
+
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
 # Например, сцену bg room можно вызвать файлом "bg room.png",
@@ -14,7 +19,10 @@ define w = Character("Незнакомка", color="#D49580")
 
 # Игра начинается здесь:
 label start:
+    # jump original_scene_on_beach
+    jump our_scene
 
+label our_scene:
     play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0 volume 0.25
 
     scene beach with dissolve
@@ -81,3 +89,61 @@ label start:
     n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и горизонт. Ну и нафиг мне этот горизонт сдался!"
 
     "Конец!"
+
+label original_scene_on_beach:
+    voice "voices/p-1_130.ogg"
+    "Как давно я не ощущал этой мягкости..."
+
+    stop music fadeout 3.0
+
+    play music Warmly
+
+    voice "voices/p-1_131.ogg"
+    "Что за?"
+    voice "voices/p-1_132.ogg"
+    "Пляж?"
+    voice "voices/p-1_133.ogg"
+    "Откуда?"
+    voice "voices/p-1_134.ogg"
+    "Как я попал сюда?"
+    voice "voices/p-1_135.ogg"
+    "Хотя... Как давно я не был тут."
+    voice "voices/p-1_136.ogg"
+    "Надо будет когда-нибудь снова сюда поехать."
+    voice "voices/So1_01.ogg"
+    Something "Ты случайно не уснул?"
+    voice "voices/p-1_137.ogg"
+    "Прозвучал чей-то голос..."
+    voice "voices/p-1_138.ogg"
+    "Голос девушки."
+    voice "voices/p-1_139.ogg"
+    "Добрый, но какой-то знакомый..."
+    Pavel "Нет, не сплю."
+    voice "voices/So1_02.ogg"
+    Something "Это хорошо, я ведь не хочу, чтобы у тебя был солнечный удар."
+    voice "voices/So1_03.ogg"
+    Something "Сейчас зонтик принесу."
+    voice "voices/p-1_140.ogg"
+    "Кто это был?"
+    voice "voices/p-1_141.ogg"
+    "Точнее, кто она и откуда меня знает?"
+    voice "voices/p-1_142.ogg"
+    "Незнакомка всё же пришла с зонтиком."
+    voice "voices/So1_04.ogg"
+    Something "Ну теперь не должно быть жарко."
+    voice "voices/p-1_143.ogg"
+    "Она села передо мной."
+    voice "voices/p-1_144.ogg"
+    "Её лицо не было видно, только её улыбка."
+    voice "voices/p-1_145.ogg"
+    "Она улыбалась..."
+    voice "voices/So1_05.ogg"
+    Something "Будешь дальше лежать или пойдем к воде?"
+    Pavel "Нет, я ещё полежу."
+    voice "voices/So1_06.ogg"
+    Something "Я рядом буду если что, хорошо?"
+    Pavel "Хорошо"
+    voice "voices/p-1_146.ogg"
+    "Она покинула мой взор, остался только я и горизонт."
+
+    jump our_scene
