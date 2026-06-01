@@ -12,7 +12,7 @@
 ##
 ## Символы "_()", окружающие название, отмечают его как пригодное для перевода.
 
-define config.name = _("FunVoiceMissingMemory")
+define config.name = _("Missing Memory: Fun Voice")
 
 
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## постройке дистрибутивов. Оно должно содержать текст формата ASCII и не должно
 ## содержать пробелы, двоеточия и точки с запятой.
 
-define build.name = "FunVoiceMissingMemory"
+define build.name = "MissingMemoryFunVoice"
 
 
 ## Звуки и музыка ##############################################################
@@ -144,7 +144,7 @@ default preferences.afm_time = 15
 ## Этот параметр обычно не должен изменяться, а если и изменился, должен быть
 ## текстовой строчкой, а не выражением.
 
-define config.save_directory = "FunVoiceMissingMemory-1780162129"
+define config.save_directory = "MissingMemoryFunVoice-1780162129"
 
 
 ## Иконка ######################################################################
