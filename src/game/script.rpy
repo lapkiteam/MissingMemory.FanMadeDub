@@ -89,6 +89,7 @@ label original_scene_on_beach:
     "Она покинула мой взор, остался только я и горизонт."
 
     stop music
+    play sound "sfx/record-scratch-wut.mp3"
     "..."
 
     scene our_answer with dissolve
