@@ -189,4 +189,6 @@ label our_scene:
     voice "voices/n-17.mp3"
     n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и горизонт. Ну и нафиг мне этот горизонт сдался!"
 
-    "Конец!"
+    scene black
+    show text Text("Конец!", size = 40) at truecenter
+    pause 5
