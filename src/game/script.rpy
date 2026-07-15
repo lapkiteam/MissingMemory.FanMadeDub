@@ -4,11 +4,11 @@ image beach = "#FDD8B5"
 
 # Определение персонажей игры.
 define n = Character()
-define p = Character("Павел", color="#69A797")
-define w = Character("Незнакомка", color="#D49580")
+define p = Character("Павел", color="#2EA586")
+define w = Character("Незнакомка", color="#BF4963")
 
-define Pavel = Character('Павел', color="#00FF66")
-define Something = Character('Незнакомка', color="#FF00C4")
+define Pavel = Character('Павел', color="#249351")
+define Something = Character('Незнакомка', color="#9E3E95")
 
 define audio.Warmly = "music/Warmly_Memories.mp3"
 
@@ -30,7 +30,12 @@ label original_scene_on_beach:
     play music Warmly volume 0.5
 
     scene black
-    show text Text("Одним скучным вечерком\nмы наткнулись на озвучку Missing Memory…", size = 40, textalign = 0.5)
+    show text Text(
+        "Одним скучным вечерком\nмы наткнулись на озвучку Missing Memory…",
+        size = 40,
+        textalign = 0.5,
+        color = "#ffffff",
+    )
     with dissolve
     pause 7
 
@@ -115,7 +120,12 @@ label our_scene:
     play music "music/outscout – Whistle Of Sailman HenrySera.mp3" fadein 1.0 volume 0.1
 
     scene black
-    show text Text("Many hours later…", size = 40) at truecenter
+    show text Text(
+        "Many hours later…",
+        size = 40,
+        textalign = 0.5,
+        color = "#ffffff",
+    )
     with dissolve
     pause 3
 
@@ -189,5 +199,10 @@ label our_scene:
     n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и горизонт. Ну и нафиг мне этот горизонт сдался!"
 
     scene black
-    show text Text("Конец!", size = 40) at truecenter
+    show text Text(
+        "Конец!",
+        size = 40,
+        textalign = 0.5,
+        color = "#ffffff",
+    )
     pause 5
