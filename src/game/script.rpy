@@ -2,6 +2,8 @@
 
 image beach = "#FDD8B5"
 
+image adalinda happy = "characters/Adalinda.png"
+
 # Определение персонажей игры.
 define n = Character()
 define p = Character("Павел", color="#2EA586")
@@ -18,7 +20,7 @@ image our_answer = "images/OurAnswer.png"
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
 # Например, сцену bg room можно вызвать файлом "bg room.png",
-# а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
+# а adalinda happy — "adalinda happy.webp", и тогда они появятся в игре.
 
 # Игра начинается здесь:
 label start:
@@ -150,7 +152,7 @@ label our_scene:
     voice "voices/n-07.mp3"
     n "Надо будет когда-нибудь снова сюда поехать. Сказал человек, который уже несколько лет пишет вторую главу визуальной новеллы, хех."
 
-    show eileen happy
+    show adalinda happy
     with dissolve
 
     voice "voices/w-ты не уснул 4.mp3"
@@ -167,13 +169,13 @@ label our_scene:
     w "Это хорошо. А то я хотела тебе усики подрисовать."
     voice "voices/w-сейчас зонтик принесу5.mp3"
     w "Сейчас зонтик принесу, чтобы ты от солнечного удара не помер."
-    hide eileen happy
+    hide adalinda happy
     with dissolve
     voice "voices/n-11.mp3"
     n "Кто это был?"
     voice "voices/n-12.mp3"
     n "Точнее, кто она и откуда знает? Блин, версия с военкоматом всё больше меня беспокоит."
-    show eileen happy
+    show adalinda happy
     with dissolve
     voice "voices/n-13.mp3"
     n "Незнакомка всё же пришла с зонтиком. Нет, военкомат бы не стал так стараться."
@@ -193,7 +195,7 @@ label our_scene:
     w "Я рядом буду если что, хорошо?"
     voice "voices/p-3.mp3"
     p "Хорошо."
-    hide eileen happy
+    hide adalinda happy
     with dissolve
     voice "voices/n-17.mp3"
     n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и горизонт. Ну и нафиг мне этот горизонт сдался!"
