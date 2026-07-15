@@ -30,9 +30,9 @@ label original_scene_on_beach:
     play music Warmly volume 0.5
 
     scene black
-    show text Text("Одним скучным вечерком…", size = 40) at truecenter
+    show text Text("Одним скучным вечерком\nмы наткнулись на озвучку Missing Memory…", size = 40, textalign = 0.5)
     with dissolve
-    pause 3
+    pause 7
 
     scene playing_video with dissolve
 
