@@ -30,7 +30,7 @@ define gui.idle_color = u'#888888'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/темнее,
 ## для того, чтобы выделяться.
-define gui.idle_small_color = u'#aaaaaa'
+define gui.idle_small_color = u'#222034'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
 define gui.hover_color = u'#66c1e0'
@@ -49,7 +49,7 @@ define gui.muted_color = u'#003d51'
 define gui.hover_muted_color = u'#005b7a'
 
 ## Цвета, используемые в тексте диалогов и выборов.
-define gui.text_color = u'#ffffff'
+define gui.text_color = u'#222034'
 define gui.interface_text_color = u'#ffffff'
 
 
@@ -130,11 +130,11 @@ define gui.namebox_tile = False
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 268
+define gui.dialogue_xpos = 245
 define gui.dialogue_ypos = 50
 
 ## Максимальная ширина текста диалога в пикселях.
-define gui.dialogue_width = 744
+define gui.dialogue_width = 770
 
 ## Горизонтальное выравнивание текста диалога. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
