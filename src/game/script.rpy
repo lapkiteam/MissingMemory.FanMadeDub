@@ -26,6 +26,9 @@ label start:
     # jump our_scene
 
 label original_scene_on_beach:
+    stop music fadeout 3.0
+    play music Warmly volume 0.5
+
     scene black
     show text Text("Одним скучным вечерком…", size = 40) at truecenter
     with dissolve
@@ -35,10 +38,6 @@ label original_scene_on_beach:
 
     voice "voices/p-1_130.ogg"
     "Как давно я не ощущал этой мягкости..."
-
-    stop music fadeout 3.0
-
-    play music Warmly volume 0.5
 
     # voice "voices/p-1_131.ogg"
     # "Что за?"
