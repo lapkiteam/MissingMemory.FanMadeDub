@@ -207,8 +207,6 @@ label our_scene:
     show horizont
     horizont "Экстренные новости! Молодой парень пропал посреди города. Полиция ищет…" with dissolve
 
-    hide horizont
-
     voice "voices/n-18.mp3"
     n "Ну и нафиг мне этот «Горизонт» сдался?!"
 
