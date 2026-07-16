@@ -12,7 +12,7 @@
 ##
 ## Символы "_()", окружающие название, отмечают его как пригодное для перевода.
 
-define config.name = _("Missing Memory: Fun Voice")
+define config.name = _("Missing Memory: Fan-Made Dub")
 
 
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
