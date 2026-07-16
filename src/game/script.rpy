@@ -201,7 +201,7 @@ label our_scene:
     hide adalinda happy
     with dissolve
     voice "voices/n-17.mp3"
-    n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и…"
+    n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и «Горизонт»."
 
     voice "voices/news.mp3"
     show horizont
