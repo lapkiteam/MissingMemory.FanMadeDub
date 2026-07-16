@@ -1,6 +1,6 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
-image beach = "#FDD8B5"
+image beach = "Beach.png"
 
 image adalinda happy = "characters/Adalinda.png"
 image horizont = "horizont.png"
