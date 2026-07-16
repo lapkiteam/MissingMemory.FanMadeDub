@@ -8,6 +8,7 @@ image adalinda happy = "characters/Adalinda.png"
 define n = Character()
 define p = Character("Павел", color="#2EA586")
 define w = Character("Незнакомка", color="#BF4963")
+define horizont = Character("Ведущий", color="#BF4963")
 
 define Pavel = Character('Павел', color="#249351")
 define Something = Character('Незнакомка', color="#9E3E95")
@@ -198,7 +199,13 @@ label our_scene:
     hide adalinda happy
     with dissolve
     voice "voices/n-17.mp3"
-    n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и горизонт. Ну и нафиг мне этот горизонт сдался!"
+    n "Она покинула мой взор, как и всё хорошее в последнее время. Остался только я и…"
+
+    voice "voices/news.mp3"
+    horizont "Экстренные новости! Молодой парень пропал посреди города. Полиция ищет…"
+
+    voice "voices/n-18.mp3"
+    n "Ну и нафиг мне этот «горизонт» сдался?!"
 
     scene black
     show text Text(
