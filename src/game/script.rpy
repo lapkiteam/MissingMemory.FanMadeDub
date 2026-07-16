@@ -3,7 +3,7 @@
 image beach = "Beach.png"
 image umbrella = "Umbrella.png"
 image adalinda happy = "characters/Adalinda.png"
-image horizont = "horizont.png"
+image horizont = "Horizont.png"
 
 # Определение персонажей игры.
 define n = Character()
