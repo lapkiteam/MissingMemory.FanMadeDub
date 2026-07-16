@@ -1,7 +1,7 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
 image beach = "Beach.png"
-
+image umbrella = "Umbrella.png"
 image adalinda happy = "characters/Adalinda.png"
 image horizont = "horizont.png"
 
@@ -177,6 +177,7 @@ label our_scene:
     n "Кто это был?"
     voice "voices/n-12.mp3"
     n "Точнее, кто она и откуда знает? Блин, версия с военкоматом всё больше меня беспокоит."
+    show umbrella
     show adalinda happy
     with dissolve
     voice "voices/n-13.mp3"
